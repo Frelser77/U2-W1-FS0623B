@@ -16,24 +16,26 @@ html {
 .nav-container {
   background-color: #fbf7e3;
   border-radius: 20px 20px 0 0;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   padding: 20px;
 }
 
 .cards-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .bg-ye {
   background-color: #f3df85;
   border-radius: 20px;
   padding: 10px 20px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin: 5px 0;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .shop-container {
@@ -52,10 +54,10 @@ html {
   height: auto;
   width: 50px;
 }
-
+/* 
 .inline {
   display: inline-block;
-}
+} */
 
 .best-selling {
   display: flex;
@@ -145,4 +147,16 @@ section {
 section span > img {
   max-width: 100%;
   height: auto;
+}
+
+header div img.logo {
+  flex-grow: 4;
+}
+
+@media screen and (max-width: 678px) {
+  header div.order {
+    justify-content: center;
+    align-items: center;
+    order: -1;
+  }
 }
