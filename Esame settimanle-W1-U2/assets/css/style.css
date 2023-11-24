@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+}
+
+/* NAV BAR */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header,
+aside {
+  background-color: #ffc017;
+  border-bottom: 1px solid #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 25px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: end;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  border: none;
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+/* MAIN & HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 7em;
+}
+
+h3 {
+  font-family: "Spectral", serif;
+  font-size: 2.5em;
+  margin-block: 15px;
+}
+
+h4 {
+  font-size: 1em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+}
+
+p {
+  text-align: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+  letter-spacing: -3px;
+  font-weight: 400;
+  font-family: "Spectral", serif;
+}
+
+.hero-left a {
+  letter-spacing: 0;
+}
+
+.btn-start {
+  padding: 12px 55px;
+  font-size: 20px;
+}
+
+main div.hero-left a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.trading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  padding: 20px 0;
+}
+
+.trading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 0 0 30%;
+  margin: 0 10px 20px;
+  max-width: 33.33%;
+  position: relative;
+}
+
+.trading-section p {
+  margin: 0;
+}
+
+.trading-section p:first-child {
+  font-weight: 400;
+}
+
+.trading-section p:nth-child(3) {
+  font-size: 1rem;
+  color: #000;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.profile {
+  display: block;
+  border-radius: 50%;
+  width: 25px;
+}
+
+.profile-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.position {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.special {
+  color: grey;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  font-size: 20px;
+}
+
+.trading-section p:nth-child(3) {
+  margin-block: 15px;
+}
+
+.trading-section p:nth-child(4) {
+  color: grey;
+  font-weight: 400;
+}
+
+/* .content-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+} */
+
+.mini-section {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 85s0px;
+}
+
+/* .content-container,
+.left-column,
+.right-column {
+  width: 100%;
+} */
+
+.text {
+  flex: 1;
+  padding-right: 20px;
+  line-height: 50px;
+  text-align: left;
+}
+
+.text h5 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* .text p {
+} */
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* .bottom p {
+} */
+
+/* .bottom img {
+} */
+
+section p {
+  text-align: left;
+}
+
+.img {
+  flex-shrink: 0;
+  margin-inline: 25px;
+}
+
+.img img {
+  width: 300px;
+  height: auto;
+}
+
+.content-container {
+  display: flex;
+}
+
+.left-column {
+  flex: 3;
+}
+
+.right-column {
+  flex: 1;
+}
+
+.topics-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.topics-flex button {
+  flex: 0 0 calc(33.333% - 10px);
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-links a {
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn.footer {
+  background-color: #f2f2f2;
+  color: black;
+  border: none;
+}
