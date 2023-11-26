@@ -103,6 +103,16 @@ p {
   text-align: center;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+
+svg {
+  width: auto !important;
+}
+
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -449,7 +459,9 @@ section div.text p:nth-of-type(1) {
   }
 
   .hero {
-    text-align: center;
+    margin-block: 40px;
+    align-items: start;
+    text-align: left;
     flex-direction: row;
   }
 
@@ -469,7 +481,7 @@ section div.text p:nth-of-type(1) {
   }
 
   .btn {
-    align-self: center;
+    align-self: baseline;
   }
 
   header ul li {
@@ -529,7 +541,7 @@ section div.text p:nth-of-type(1) {
 }
 
 @media screen and (max-width: 991px) {
-  .hero svg {
+  .hero-container svg {
     display: none;
   }
 
